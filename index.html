@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruitment System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo"><i class="fa-solid fa-briefcase"></i> Recruitment System</div>
+    <a href="admin.html" class="btn-outline">Admin Login</a>
+</header>
+
+<!-- Available Jobs Section -->
+<section class="jobs-section">
+    <h1>Available Jobs</h1>
+
+    <div class="job-container">
+
+        <div class="job-card">
+            <h3>Software Developer</h3>
+            <p><strong>Location:</strong> New Delhi, Hyderabad, Pune, Bangalore</p>
+            <p><strong>Requirements:</strong> HTML, CSS, JavaScript, Python</p>
+            <button onclick="scrollToForm()">Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Software Testing</h3>
+            <p><strong>Location:</strong> New Delhi, Hyderabad, Pune, Bangalore</p>
+            <p><strong>Requirements:</strong> Manual Testing, Automation, Selenium</p>
+            <button onclick="scrollToForm()">Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>HR Executive</h3>
+            <p><strong>Location:</strong> Mumbai, Pune, Hyderabad</p>
+            <p><strong>Requirements:</strong> Communication Skills, Recruitment Experience</p>
+            <button onclick="scrollToForm()">Apply Now</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Registration Form -->
+<section class="form-section" id="applyForm">
+    <div class="form-card">
+        <h2>Candidate Registration</h2>
+
+        <form action="register.php" method="POST" enctype="multipart/form-data">
+
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="text" name="course" placeholder="Course">
+            <input type="text" name="graduated" placeholder="Graduated Year">
+
+            <div class="row">
+                <input type="text" name="twelfth_percent" placeholder="12th %">
+                <input type="text" name="tenth_percent" placeholder="10th %">
+            </div>
+
+            <select name="position" required>
+                <option value="">Select Position</option>
+                <option>Software Developer</option>
+                <option>Software Testing</option>
+                <option>HR Executive</option>
+            </select>
+
+            <input type="file" name="resume" required>
+
+            <button type="submit" class="btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Submit Application
+            </button>
+
+        </form>
+    </div>
+</section>
+
+<script>
+function scrollToForm() {
+    document.getElementById("applyForm").scrollIntoView({behavior: "smooth"});
+}
+</script>
+
+</body>
+</html>
