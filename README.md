@@ -5,7 +5,7 @@ A complete web-based Recruitment Management System developed as a Final Year Pro
 This system allows candidates to apply for jobs online and enables administrators to manage applications efficiently.
     
 ---        
-    
+        
 ## 📌 Project Overview
 
 The Recruitment Management System is a PHP & MySQL-based web application that:
