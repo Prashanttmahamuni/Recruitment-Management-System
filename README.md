@@ -1,7 +1,7 @@
 # 🚀 Recruitment Management System
     
 A complete web-based Recruitment Management System developed as a Final Year Project.
-        
+            
 This system allows candidates to apply for jobs online and enables administrators to manage applications efficiently.
     
 ---            
