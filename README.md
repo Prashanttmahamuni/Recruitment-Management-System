@@ -7,7 +7,7 @@ This system allows candidates to apply for jobs online and enables administrator
 ---                    
               
 ## 📌 Project Overview
-
+  
 The Recruitment Management System is a PHP & MySQL-based web application that:
 
 - Displays available job positions
